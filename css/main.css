@@ -1,11 +1,20 @@
+body {
+    height: 100vh;
+    position: relative;
+    background-image: url(../img/hill.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px);
+}
+
 .container {
     width: 800px;
-    margin-top: 100px;
-    margin-left: calc(50% - 400px);
-    padding: 60px;
-    background-color: ;
     display: inline-block;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%)
 }
 
 .left-column {
@@ -20,6 +29,8 @@
     color: #fff;
     position: absolute;
     bottom: 30px;
+    top: 30px;
+    left: 0;
     
 }
 
@@ -55,8 +66,11 @@
     line-height: 54px;
     float: right;
     background-color: red;
+    border-radius: 10px 50%;
+    border: 5px solid yellow;
     position: absolute;
     right: 0;
     top: 0;
+    cursor: pointer;
 }
 
